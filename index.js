@@ -59,7 +59,7 @@ inquirer
         },
     ])
     .then((answers) => {
-        const htmlPageContent = generateHTML(answer);
+        const htmlPageContent = generateHTML(answers);
 
         fs.writeFile('index.html', htmlPageContent, (err) =>
             err ? console.log(err) : console.log('Successfully created index.html!')        
